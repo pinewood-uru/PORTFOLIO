@@ -32,7 +32,7 @@ h1, h2, h4{
 }
 
 h3{
-    font-size: 110px;
+    font-size: 190px;
 }
 
 p, a{
@@ -49,6 +49,8 @@ a:hover{
 
 nav{
     width: 80%;
+    position: sticky;
+    top:10px;
 }
 
 nav>div{
@@ -60,7 +62,18 @@ nav>div{
     align-self: stretch;
 }
 
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 3rem;
+}
+
+/* ID -------------- */
+
 #section1{
+    
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -71,10 +84,10 @@ nav>div{
 
 #banner{
     display: flex;
-    min-height: 300px;
+    min-height: 400px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
     align-self: stretch;
 }
@@ -85,7 +98,7 @@ nav>div{
     margin: 2rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
     flex-shrink: 0;
     align-self: stretch;
 }
@@ -107,7 +120,7 @@ nav>div{
     margin: 3rem;
     justify-content: center;
     align-items: start;
-    gap: 10px;
+    gap: 1rem;
    
 }
 
@@ -121,18 +134,71 @@ nav>div{
     align-items: center;
 }
 
+#section3>div:nth-child(3){
+    flex-direction: row-reverse;
+    
+}
+
+#section4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#section4>div{
+    width: 80%;
+}
+
+#contenedor-contacto{
+    display: flex;
+    flex: 2 1 0;
+    width: 100%;
+    gap: .5rem;
+    flex-direction: row;
+    min-height: 400px;
+}
+
+
+
+#proyectos-contacto{
+    display:flex;
+    flex: 1 2 0;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    
+}
+
+#contacto-titulo{
+    
+    text-align: center;
+}
+
+#menu-footer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
 /* CLASES */
 
 .contenedor-proyecto{
     width: 100%;
     padding: 2rem 0;
     min-height: 400px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .imagen-proyecto{
@@ -206,6 +272,28 @@ nav>div{
     width: 100%;
     height: auto;
 }
+
+.imgcontacto{
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    
+    
+    background: #D9D9D9;
+
+}
+
+.proyectos-contacto-img{
+    height: auto;
+    width: 300px;
+}
+
+.logo-footer{
+    width: 100px;
+    height: auto;
+}
+
+
 }
 
 /* MOBILE------------------------------- */
