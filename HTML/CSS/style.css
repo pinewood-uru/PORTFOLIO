@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: var(--white);
   font-family: "Monospac821 BT";
 }
 
@@ -62,9 +61,12 @@ body{
   }
 
   nav {
+    height: 8vh;
     width: 80%;
     position: sticky;
-    top: 10px;
+    top: 0px;
+    background: var(--white);
+
   }
 
   nav > div {
@@ -81,6 +83,7 @@ body{
   }
 
   footer {
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -269,6 +272,88 @@ body{
     
   }
 
+  /* PROYECTO + ------------------------------ */
+
+  #section5{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    margin: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #contenedor-proyecto-mockups{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #contenedor-proyecto-mockups>img{
+    width: 90%;
+    height: auto;
+    max-height: 200px;
+  }
+
+  /* PERFIL */
+
+  #section6{
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #contenedor-perfil{
+    width: 80%;
+    min-height: 70vh;
+    display: flex; 
+    justify-content: flex-start;
+
+  }
+
+  #imagenes-perfil{
+    flex: 1 1 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  #imagenes-perfil>img{
+    flex: 1 1 0;
+    width: auto;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #imagenes-perfil>img:nth-child(1){
+    
+    max-width: 200px;
+    
+  }
+
+  #info-perfil{
+    flex: 2 2 1;
+    height: auto;
+    padding: 0 1rem;
+       
+  }
+
+  #info-perfil>div>p{
+    margin:  .25rem 0;
+    text-align: justify;
+  }
+
+  
+
+
+
   
 
   /* CLASES-------------------------------------- */
@@ -303,6 +388,7 @@ body{
   }
   
   .detalles-proyecto {
+    flex: 1 1 1;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -333,7 +419,7 @@ body{
     font-weight: 600;
   }
   
-  .imagen-secundaria-contenedor {
+  .imagen-secundaria-contenedor, .imagen-detalle-contenedor {
     flex: 1 1 0;
     display: flex;
     flex-direction: column;
@@ -344,12 +430,19 @@ body{
     height: auto;
   }
   
-  .imagen-secundaria {
+  .imagen-secundaria, .imagen-detalle {
     width: 370px;
     height: 158px;
     background: #d9d9d9;
   }
-  
+.imagen-detalle {
+    
+    height: 100%;
+    width: auto;
+    max-width: 300px;
+    background: #d9d9d9;
+  }
+
   .imagen-secundaria > img {
     width: 100%;
     height: auto;
