@@ -143,7 +143,6 @@ body {
     width: 100%;
     position: sticky;
     top: 0px;
-    background: var(--bgwhite);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +183,7 @@ body {
     position: relative;
     width: 100%;
     display: flex;
-    min-height: 400px;
+    min-height: 350px;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -256,6 +255,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 1rem 0;
+    margin: 3rem 0;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -442,7 +442,7 @@ body {
   }
 
   #imagenes-perfil > img {
-    flex: 1 1 0;
+    flex: 2 2 2;
     width: auto;
     max-width: 100px;
     height: 100%;
@@ -454,7 +454,7 @@ body {
   }
 
   #info-perfil {
-    flex: 2 2 1;
+    flex: 1 1 1;
     height: auto;
     padding: 0 1rem;
   }
@@ -466,6 +466,10 @@ body {
   #info-perfil > div > p {
     margin: 0.25rem 0;
     text-align: justify;
+  }
+
+  #info-perfil > div > p{
+    font-size: 20px;
   }
 
   /* CLASES-------------------------------------- */
@@ -608,7 +612,6 @@ body {
 
   .titulo-perfil {
     color: var(--grey);
-    font-size: 16px;
   }
 }
 
