@@ -636,6 +636,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: var(--bgblack) solid 1px;
+    padding-top: .5rem;
   }
 
   /* PROYECTO + ------------------------------ */
@@ -829,7 +831,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    filter: saturate(0);
+    border-bottom: var(--bgblack) 1px solid;
+    padding-bottom: .5rem;
   }
 
   .ctn-card-proyecto:hover {
@@ -860,11 +863,12 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   .img-card {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: auto;
     max-height: 200px;
     margin: 0;
+    align-self: flex-start;
   }
 
   .collapse-content {
@@ -906,12 +910,14 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   .ctn-content-img {
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
   .ctn-content-img > img {
-    width: 25%;
-    height: auto;
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
   }
 
   .logo-be {
