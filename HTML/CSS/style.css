@@ -912,11 +912,20 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
   }
 
-  .ctn-content-img > img {
-    max-width: 300px;
+  .ctn-content-img > div {
+    flex: 1 1 0;
+    width: 50%;
+    max-height: 300px;
+    margin: 0;
+  }
+
+  .ctn-content-img div> img {
+    width: auto;
     height: 100%;
+    max-height: 300px;
     object-fit: cover;
   }
 
