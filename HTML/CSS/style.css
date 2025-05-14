@@ -872,7 +872,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   .collapse-content {
-    height: 15%;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
@@ -880,7 +879,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     width: 100%;
   }
 
-  .collapse-content div:nth-child(1) {
+  .collapse-content>div:nth-child(1) {
     width: 50%;
     margin-left: 5rem;
   }
@@ -910,14 +909,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   .ctn-content-img {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 1rem 0;
   }
 
   .ctn-content-img > div {
     flex: 1 1 0;
-    width: 50%;
     max-height: 300px;
     margin: 0;
   }
@@ -925,6 +923,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   .ctn-content-img div> img {
     width: auto;
     height: 100%;
+    align-items: flex-start;
     max-height: 300px;
     object-fit: cover;
   }
