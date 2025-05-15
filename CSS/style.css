@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Monospac821 BT";
+  font-family: "Monospac821 BT", monospace;
   scroll-behavior: smooth;
-
+  text-transform: uppercase;
 }
 
 :root {
-  --font-primaria: "Monospac821 BT";
+  --font-primaria: "Monospac821 BT", monospace;
   --black: #191919;
   --white: #ffffff;
   --bgwhite: #f3f3f389;
@@ -460,6 +460,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     gap: 1rem;
     min-height: 40vh;
+    background: var(--black);
   }
 
   #contenedor-contacto {
@@ -470,6 +471,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    color: var(--white);
   }
 
   #contenedor-contacto > div:nth-child(1) {
@@ -526,7 +528,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #ctn-contacto-form textarea,
   #ctn-contacto-form button {
     width: 100%;
-    border: var(--black) solid 1px;
+    border: var(--white) solid 1px;
     border-radius: 0;
     margin: 0.5rem;
     padding: 0.25rem;
@@ -539,14 +541,14 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #ctn-contacto-form button {
-    color: var(--white);
-    background: var(--black);
+    color: var(--black);
+    background: var(--white);
     padding: 1rem;
   }
 
   #ctn-contacto-form button:hover {
-    color: var(--white);
-    background: var(--black);
+    color: var(--black);
+    background: var(--bgwhite);
     padding: 1rem;
   }
 
@@ -829,10 +831,9 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     height: 8%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     border-bottom: var(--bgblack) 1px solid;
-    padding-bottom: .5rem;
   }
 
   .ctn-card-proyecto:nth-last-child(1) {
@@ -881,12 +882,12 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: none;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1rem;
     width: 100%;
+    gap: .25rem;
   }
 
   .collapse-content>div:nth-child(1) {
-    width: 50%;
+    width: 75%;
     margin-left: 5rem;
   }
 
@@ -917,20 +918,30 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 1rem 0;
+    margin-top: 2rem;
     object-fit: cover;
+    border-top: var(--black) 1px solid;
+
   }
 
   .ctn-content-img > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     height: auto;
     max-height: 300px;
     margin: 0;
+    border-right: var(--black) 1px solid;
   }
+  .ctn-content-img > div:last-child {
+    border-right: none;
+  }
+  
 
   .ctn-content-img div> img {
     height: 100%;
     align-items: flex-start;
-    max-height: 300px;
     max-width: 400px;
     object-fit: contain;
   }
@@ -944,7 +955,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     background: var(--black);
     color: var(--white);
     padding: .5rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
   
   }
 }
@@ -1527,6 +1538,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   .collapse-content div:nth-child(1) {
     width: 100%;
+    margin: .25rem 0;
   }
 
   .collapse-content p{
@@ -1556,9 +1568,9 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
   }
 
-  .ctn-content-img > img {
+  .ctn-content-img div>img {
     flex: 1 1 0;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: auto;
     max-height: 15vh;
