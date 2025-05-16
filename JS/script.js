@@ -54,7 +54,6 @@ window.addEventListener('load', () => {
   loader.classList.add('hide');
   setTimeout(() => {
     loader.style.display = 'none';
-    window.scrollTo({ top: 0 });
     document.body.style.overflowY = 'auto';
   }, 2000);
 });
