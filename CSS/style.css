@@ -891,6 +891,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: flex-start;
     width: 100%;
     gap: .25rem;
+    
   }
 
   .collapse-content>div:nth-child(1) {
@@ -928,6 +929,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     margin-top: 2rem;
     object-fit: cover;
     border-top: var(--black) 1px solid;
+    
 
   }
 
