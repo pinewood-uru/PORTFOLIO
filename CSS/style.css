@@ -917,6 +917,11 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     color: var(--grey);
   }
 
+  .titulo-perfil> span {
+    color: var(--black);
+    font-weight: 600;
+  }
+
   .texto-perfil {
     display: none;
   }
@@ -972,16 +977,9 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 /* MOBILE------------------------------------------------------------------------------------------------------------------------ */
 
 @media only screen and (max-width: 600px) {
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a {
+  *{
     color: var(--black);
-    font-family: "Monospac821 BT";
+    font-family: "Monospac821 BT", monospace;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
