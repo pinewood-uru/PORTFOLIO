@@ -1064,6 +1064,15 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     min-height: 30vh;
   }
 
+  #banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   #spline{
     position: absolute;
     left: 0;
@@ -1297,15 +1306,14 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     background: var(--blue);
   }
 
-  #side {
-    display: none;
-  }
 
   #ctn-galeria {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 3rem 0;
+    background: var(--grey);
+
   }
 
   #galeria {
