@@ -353,7 +353,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
   }
 
-  spline-viewer {
+  #spline{
     position: absolute;
     left: 0;
     top: 0;
@@ -1063,16 +1063,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     min-height: 30vh;
   }
 
-  #banner {
-    position: relative;
-    width: 90%;
-    display: flex;
-    min-height: 450px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  spline-viewer{
+  #spline{
     position: absolute;
     left: 0;
     top: 0;
