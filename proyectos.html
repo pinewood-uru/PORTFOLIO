@@ -362,37 +362,41 @@
         </section>
       </section>
 
-    <!-- SECTION 4 -->
-    <section id="section4">
-      <div id="contenedor-contacto">
-        <div>
+      <!-- SECTION 4 -->
+      <section id="section4">
+        <div id="contenedor-contacto">
           <div>
-            <img class="imgcontacto" src="img/Concipere Reducido.png" alt="" />
+            <div>
+              <img
+                class="imgcontacto"
+                src="img/Concipere Reducido.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div id="contacto-info">
+            <h2>MONTEVIDEO<br />URUGUAY<br />CONCIPERE@GMAIL.COM</h2>
+            <h2>INSTAGRAM<br />CONCIPERE.UY</h2>
+            <h2>TEL: +598 92 686 949<br />URUGUAY</h2>
+          </div>
+          <div id="ctn-contacto-form">
+            <p>¿INTERESADO EN TRABAJAR CONMIGO?</p>
+
+            <form
+              action="https://formsubmit.co/f.avellanal@gmail.com"
+              method="POST"
+            >
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" required />
+              <label for="email">Email</label>
+              <input type="email" name="email" required autocomplete="on" />
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
           </div>
         </div>
-        <div id="contacto-info">
-          <h2>MONTEVIDEO<br />URUGUAY<br />CONCIPERE@GMAIL.COM</h2>
-          <h2>INSTAGRAM<br />CONCIPERE.UY</h2>
-          <h2>TEL: +598 92 686 949<br />URUGUAY</h2>
-        </div>
-        <div id="ctn-contacto-form">
-          <p>¿INTERESADO EN TRABAJAR CONMIGO?</p>
-
-          <form
-            action="https://formsubmit.co/f.avellanal@gmail.com"
-            method="POST"
-          >
-            <label for="name">Nombre</label>
-            <input type="text" name="nombre" required />
-            <label for="email">Email</label>
-            <input type="email" name="email" required />
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <!-- FOOTER -->
 
@@ -419,6 +423,15 @@
     <!-- CURSOR -->
 
     <div class="cursor"></div>
+
+    
+    <!-- BACKGROUND -->
+    <div id="ctn-video">
+      <video autoplay muted loop id="myVideo">
+        <source src="img/7639240-hd_1080_1920_30fps.mp4" />
+      </video>
+    </div>
+    
     <script type="module" src="JS/script.js"></script>
   </body>
 </html>
