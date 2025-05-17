@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Monospac821 BT", monospace;
-  scroll-behavior: smooth;
   text-transform: uppercase;
 }
 
@@ -44,34 +43,11 @@ html {
   animation: l10 1s infinite linear;
 }
 @keyframes l10 {
-  0%    {box-shadow: 
-          0 -30px var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue),30px 0 var(--red), 0 0 var(--blue),
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue)}
-  12.5% {box-shadow: 
-          0 0 var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue),30px 0 var(--red), calc(30px*0.707) calc(30px*0.707) var(--blue),
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue)}
-  25%   {box-shadow: 
-          0 0 var(--red), 0 0 var(--blue),30px 0 var(--red), calc(30px*0.707) calc(30px*0.707) var(--blue),
-          0 30px var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue)}
-  37.5% {box-shadow: 
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), calc(30px*0.707) calc(30px*0.707) var(--blue),
-          0 30px var(--red), calc(-30px*0.707) calc(30px*0.707) var(--blue),0 0 var(--red), 0 0 var(--blue)}
-  50%   {box-shadow: 
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue),
-          0 30px var(--red), calc(-30px*0.707) calc(30px*0.707) var(--blue),-30px 0 var(--red), 0 0 var(--blue)}
-  62.5% {box-shadow: 
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue),
-          0 0 var(--red), calc(-30px*0.707) calc(30px*0.707) var(--blue),-30px 0 var(--red), calc(-30px*0.707) calc(-30px*0.707) var(--blue)}
-  75%   {box-shadow: 
-          0 -30px var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue),
-          0 0 var(--red), 0 0 var(--blue),-30px 0 var(--red), calc(-30px*0.707) calc(-30px*0.707) var(--blue)}
-  87.5% {box-shadow: 
-          0 -30px var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue),0 0 var(--red), 0 0 var(--blue),
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), calc(-30px*0.707) calc(-30px*0.707) var(--blue)}
-  100%  {box-shadow: 
-          0 -30px var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue),30px 0 var(--red), 0 0 var(--blue),
-          0 0 var(--red), 0 0 var(--blue),0 0 var(--red), 0 0 var(--blue)}
-
+  0%    {box-shadow: 0 -30px var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue)}
+  12.5% {box-shadow: 0 0 var(--red), calc(30px*0.707) calc(-30px*0.707) var(--blue)}
+  25%   {box-shadow: 0 0 var(--red), 0 0 var(--blue)}
+  37.5% {box-shadow: 0 0 var(--red), calc(30px*0.707) calc(30px*0.707) var(--blue)}
+  50%   {box-shadow: 0 30px var(--red), calc(-30px*0.707) calc(30px*0.707) var(--blue)}
 }
 
 
@@ -259,6 +235,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   h5,
   h6,
   a {
+    color: var(--black);
     font-family: "Monospac821 BT";
     font-style: normal;
     font-weight: 400;
@@ -476,6 +453,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     gap: 1rem;
     min-height: 40vh;
+  }
+
+  #mapa{
+    border: none;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
   }
 
   #contenedor-contacto {
