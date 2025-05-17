@@ -13,7 +13,7 @@
   --white: #ffffff;
   --bgwhite: #f3f3f359;
   --bgblack: #191919e3;
-  --grey: #bdbdbd;
+  --grey: #e2e4e200;
   --blue: #0026ff;
   --red: #ff0000;
 }
@@ -615,6 +615,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     justify-content: center;
     margin: 3rem 0;
+    background: var(--grey);
   }
 
   #galeria {
@@ -624,7 +625,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--bgwhite);
     padding-top: .5rem;
   }
 
@@ -819,7 +819,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: var(--bgblack) 1px solid;
+    border-bottom: var(--white) 1px solid;
   }
 
   .ctn-card-proyecto:nth-last-child(1) {
@@ -913,7 +913,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     margin-top: 2rem;
     object-fit: cover;
     border-top: var(--white) 1px solid;
-    background: var(--white);
     
 
   }
