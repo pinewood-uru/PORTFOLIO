@@ -1067,6 +1067,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #banner {
     position: relative;
     width: 100%;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
