@@ -490,11 +490,26 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     min-height: 40vh;
   }
 
+  #be{
+    width: 15%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  #be:hover{
+    transform: scale(1.1);
+    background: none;
+    color: var(--black);
+  }
+
   #mapa{
     border: none;
     width: 100%;
     height: 100%;
-    filter: saturate();
+    min-height: 400px;
+    object-fit: cover;
+    filter: saturate(0);
+    margin: 1rem 0;
   }
 
   #contenedor-contacto {
@@ -623,23 +638,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
   }
 
-  #redes-footer {
-    margin: 0 3rem;
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-  }
-
-  #redes-footer a {
-    text-decoration: none;
-    color: var(--blue);
-  }
-
-  #redes-footer a:hover {
-    color: var(--grey);
-    background: var(--blue);
-  }
 
   #ctn-galeria {
     display: flex;
@@ -1253,6 +1251,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
   }
 
+  #mapa{
+    border: none;
+    width: 100%;
+    height: 100%;
+    filter: saturate(0);
+  }
+
   #herramientas {
     display: flex;
     flex-direction: row;
@@ -1289,26 +1294,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
   }
 
-  #redes-footer {
-    margin: 0 3rem;
-    width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-  }
-
-  #redes-footer a {
-    text-decoration: none;
-    color: var(--blue);
-  }
-
-  #redes-footer a:hover {
-    color: var(--white);
-    background: var(--blue);
-  }
-
-
-  #ctn-galeria {
+   #ctn-galeria {
     width: 100%;
     display: flex;
     justify-content: center;
