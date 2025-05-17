@@ -1072,7 +1072,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
   }
 
-  spline-viewer {
+  spline-viewer{
     position: absolute;
     left: 0;
     top: 0;
