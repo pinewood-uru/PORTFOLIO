@@ -60,3 +60,4 @@ window.addEventListener('load', () => {
 
 loader.classList.add('show');
 document.body.style.overflowY = 'hidden';
+
