@@ -1318,8 +1318,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-bottom: 2rem 0;
-    margin-bottom: 3rem 0;
+    padding-bottom: 2rem ;
+    margin-bottom: 3rem ;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -1331,7 +1331,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 200px;
   }
 
   #contenedor-contacto > div:nth-child(1) {
