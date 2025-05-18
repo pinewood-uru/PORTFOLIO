@@ -440,6 +440,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    
+
   }
 
   #section3 h3{
@@ -1112,7 +1114,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -1120,6 +1122,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   h3 {
     font-size: 50px;
+    text-align: center;
   }
 
   p,
@@ -1188,6 +1191,10 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     width: 100%;
     gap: 1rem;
     min-height: 30vh;
+  }
+
+  #spline{
+    padding: 2rem 0 !important;
   }
 
   #banner {
@@ -1262,7 +1269,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   #detalle-info li{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 14px;
     gap: 1rem;
     border-bottom: var(--white) solid;
     padding: 1rem 0;
@@ -1290,6 +1297,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     min-height: 100px;
     justify-content: center;
     align-items: center;
+    border-top: var(--black) solid 1px;
+    padding: 1rem;
   }
 
   #section3 > div:nth-child(1) {
@@ -1473,6 +1482,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     margin: 3rem 0;
     background: var(--grey);
 
+
   }
 
   #galeria {
@@ -1482,7 +1492,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: var(--black) solid 1px;
     border-bottom: var(--black) solid 1px;
     background: var(--grey);
 
@@ -1873,3 +1882,4 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
 
 }
+

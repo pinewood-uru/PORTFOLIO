@@ -68,7 +68,7 @@ const footer = document.querySelector("footer");
 
 function showFooter() {
   if (window.innerWidth <= 600) {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 500) {
       footer.style.bottom = "0";
     } else {
       footer.style.bottom = "-8vh";
