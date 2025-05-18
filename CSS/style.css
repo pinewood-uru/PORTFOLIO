@@ -604,6 +604,11 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     padding: 1rem;
   }
 
+  #ctn-herramientas{
+    text-align: center;
+
+  }
+
   #herramientas {
     display: flex;
     flex-direction: row;
@@ -613,6 +618,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
     margin: 3rem 0;
     width: 100%;
+    
   }
 
   #herramientas div {
@@ -627,7 +633,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #herramientas img {
-    width: 100px;
+    width: 150px;
   }
 
   #menu-footer {
@@ -682,6 +688,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   /* PERFIL */
 
+  #ctn-subtitulo{
+    width: 40%;
+    margin: 2rem;
+    text-align: justify;
+
+  }
+
   #section6 {
     display: flex;
     flex-direction: column;
@@ -689,7 +702,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin: 0 3rem;
+    margin: 1rem 3rem;
+
   }
 
   #contenedor-perfil {
@@ -821,6 +835,19 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     width: auto;
     max-width: 300px;
     background: #d9d9d9;
+  }
+
+  .ver-todos{
+    margin: 3rem;
+    padding: 1rem;
+    background: var(--black);
+    color: var(--grey);
+
+  }
+
+  .ver-todos a{
+    color: var(--white);
+
   }
 
   .imagen-secundaria > img {
@@ -979,6 +1006,15 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     color: var(--white);
     padding: .5rem;
     margin: 3rem 0;
+  }
+
+  .forma-concepto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0
   }
 
 
@@ -1261,6 +1297,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    text-align: center;
+
   }
 
   #mapa{
@@ -1295,7 +1333,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
 
   #herramientas img {
-    width: 100px;
+    width: 80px;
   }
 
   #menu-footer {
@@ -1353,6 +1391,16 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   /* PERFIL */
 
+    /* PERFIL */
+
+    #ctn-subtitulo{
+      width: 70%;
+      margin: 2rem;
+      text-align: justify;
+    }
+
+
+
   #section6 {
     width: 100%;
     display: flex;
@@ -1360,6 +1408,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     min-height: 70vh;
     justify-content: flex-start;
     align-items: center;
+    margin: 1rem 0;
   }
 
   #contenedor-perfil {
@@ -1413,12 +1462,29 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     font-size: 14px;
   }
 
+  /* CONCIPERE */
+
+  #ctn-concipere {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1rem 0;
+  }
+
+  #brand-concipere{
+    width: 80%;
+
+  }
+
   /* CLASES-------------------------------------- */
 
   .animation div>div {
     color: var(--white) !important;
     
   }
+
+
 
 
   .contenedor-proyecto {
@@ -1480,6 +1546,17 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   .ver-mas > a {
     font-weight: 600;
+  }
+
+  .ver-todos{
+    margin: 1.5rem;
+    padding: .5rem;
+    background: var(--black);
+  }
+
+  .ver-todos> a{
+    color: var(--white);
+
   }
 
   .imagen-secundaria-contenedor,
