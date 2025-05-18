@@ -160,7 +160,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 .animation {
   height: 5vh;
   overflow: hidden;
-  margin-left: 3rem;
   justify-content: center;
 }
 
@@ -624,7 +623,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   #ctn-herramientas{
     text-align: center;
+    border-bottom: var(--black) solid 1px;
+    
 
+  }
+
+  #ctn-herramientas h2{
+    color: var(--black);
   }
 
   #herramientas {
@@ -635,6 +640,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     gap: 1rem;
     margin: 3rem 0;
+    padding-bottom: 2rem;
     width: 100%;
     
   }
@@ -651,7 +657,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #herramientas img {
-    width: 150px;
+    width: 100px;
   }
 
   #menu-footer {
@@ -721,44 +727,52 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #section6 {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 70vh;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    margin: 1rem 3rem;
+    margin: 2rem 0;
+    border-bottom: var(--black) solid 1px;
+    border-top: var(--black) solid 1px;
 
   }
 
   #contenedor-perfil {
-    width: 80%;
+    width: 100%;
     min-height: 70vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   #imagenes-perfil {
-    flex: 1 1 0;
+    flex: 2 2 0;
     display: flex;
     margin: 0;
     padding: 0;
+    
   }
 
   #imagenes-perfil > img {
-    width: auto;
-    max-width: 100px;
-    height: 100%;
+    width: 100%;
+    max-width: 120px;
+    max-height: 800px;
+    height: auto;
     object-fit: cover;
   }
 
   #imagenes-perfil > img:nth-child(1) {
-    max-width: 200px;
+    max-width: 300px;
   }
 
   #info-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: auto;
-    padding: 0 1rem;
+    padding: 2rem 0;
+    margin-right: 2rem;
+    width: 50%;
   }
 
   #info-perfil div {
@@ -771,7 +785,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #info-perfil > div > p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   #info-perfil div> p:first-child:hover{
@@ -1294,8 +1308,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 2rem 0;
-    margin: 3rem 0;
+    padding-bottom: 2rem 0;
+    margin-bottom: 3rem 0;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -1336,7 +1350,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     margin: 1rem 0;
   }
 
-  #contacto-info > h2 {
+  #contacto-info > p {
     font-size: 20px;
   }
 
@@ -1403,6 +1417,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     gap: 1rem;
     text-align: center;
+    border-bottom: var(--black) solid 1px;
+    padding: 2rem 0;
 
   }
 
@@ -1499,11 +1515,20 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   .container-animation {
     color: var(--white);
     text-transform: uppercase;
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  
+  .container-animation p{
+    margin: 2rem;
+  }
+
+  .animation{
+    margin-right: 1rem;
   }
 
 
@@ -1531,6 +1556,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: flex-start;
     align-items: center;
     margin: 1rem 0;
+    border-bottom: var(--black) solid 1px;
+
   }
 
   #contenedor-perfil {
