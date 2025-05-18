@@ -689,7 +689,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   /* PERFIL */
 
   #ctn-subtitulo{
-    width: 40%;
+    width: 50%;
     margin: 2rem;
     text-align: justify;
 
@@ -1107,7 +1107,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #banner {
     position: relative;
     width: 100%;
-    min-height: 45vh;
+    min-height: 47vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
