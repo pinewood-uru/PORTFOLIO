@@ -61,3 +61,19 @@ window.addEventListener('load', () => {
 loader.classList.add('show');
 document.body.style.overflowY = 'hidden';
 
+
+// FOOTER EN MOBILE ---------
+
+const footer = document.querySelector("footer");
+
+function showFooter() {
+  if (window.innerWidth <= 600) {
+    if (window.scrollY > 300) {
+      footer.style.bottom = "0";
+    } else {
+      footer.style.bottom = "-8vh";
+    }
+  }
+}
+
+window.addEventListener("scroll", showFooter);

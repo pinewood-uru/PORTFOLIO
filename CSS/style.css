@@ -1166,7 +1166,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     position: fixed;
     z-index: 999;
     left: 0px;
-    bottom: 0px;
+    bottom: -8vh;
     height: 8vh;
     width: 100%;
     display: flex;
@@ -1175,8 +1175,9 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     padding: 0 3rem;
     border-top: var(--black) solid 1px;
     background: var(--white);
-
+    transition: bottom 0.5s ease-in-out;
   }
+
 
   /* ID -------------- */
 
