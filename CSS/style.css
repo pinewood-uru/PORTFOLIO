@@ -303,10 +303,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     color: var(--white);
   }
 
-
-
   nav {
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     position: sticky;
     top: 0px;
@@ -321,10 +319,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     padding: 10px 0px;
     justify-content: space-between;
     align-items: center;
-  }
-
-  section > div:nth-child(1) {
-    margin: 0 3rem;
   }
 
   footer {
@@ -353,9 +347,10 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
-    justify-content: center;
+    min-height: 200px;
+    justify-content: flex-start;
     align-items: center;
+
   }
 
   #ctn-video{
@@ -428,7 +423,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1.5rem;
+    padding: 3.5rem;
   }
 
   #section3 {
@@ -1051,6 +1046,11 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     font-size: 10px;
   }
 
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
 
 
   h3 {
@@ -1058,9 +1058,15 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   p,
-  a {
+  a,
+  li {
     text-decoration: none;
     font-size: 10px;
+    text-align: center;
+  }
+
+  ul{
+    list-style-type: none;
   }
 
   a:hover {
@@ -1071,7 +1077,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
 
   nav {
-    height: 8vh;
+    height: 7vh;
     width: 100%;
     position: sticky;
     top: 0px;
@@ -1083,7 +1089,6 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   nav > div {
     width: 80%;
     display: flex;
-    padding: 10px 0px;
     justify-content: space-around;
     align-items: center;
   }
@@ -1121,12 +1126,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   #banner {
     position: relative;
-    width: 100%;
-    min-height: 47vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
   }
 
   #spline{
