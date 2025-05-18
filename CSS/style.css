@@ -24,7 +24,7 @@ html {
 /* LOADER  https://css-loaders.com/clones/ */
 
 #ctn-loader{
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1128,6 +1128,11 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     position: relative;
     display: flex;
     height: 50vh;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
   }
 
   #spline{
@@ -1162,6 +1167,39 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  /* DETALLE */
+
+  #ctn-detalle-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    padding: 1rem 0;
+  }
+
+  #ctn-detalle-info>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #detalle-info{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: .25rem;
+  }
+
+  #detalle-info li{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 1rem;
+    border-bottom: var(--white) solid;
+    padding: 1rem 0;
   }
 
   #section2 {
@@ -1628,7 +1666,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: var(--bgblack) 1px solid;
+    border-bottom: var(--white) solid;
+
 
   }
 
