@@ -8,7 +8,7 @@
 
 :root {
   --font-primaria: "Monospac821 BT", monospace;
-  --black: #191919;
+  --black: #1b1b1b;
   --white: #f4f3f3;
   --bgwhite: #f3f3f359;
   --bgblack: #191919e3;
@@ -148,7 +148,7 @@ html {
 /* BANNER PROFILE ------------------------- 
 https://codepen.io/carloscdev/pen/mdBLmwP*/
 
-.container {
+.container-animation {
   color: var(--white);
   text-transform: uppercase;
   height: 10vh;
@@ -161,6 +161,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   height: 5vh;
   overflow: hidden;
   margin-left: 3rem;
+  justify-content: center;
 }
 
 .animation > div > div {
@@ -184,42 +185,44 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   background-color: var(--red);
 }
 
-@keyframes text-animation {
-  0% {
-    margin-top: 0;
-  }
-  10% {
-    margin-top: 0;
-  }
-  20% {
-    margin-top: -4.2rem;
-  }
-  30% {
-    margin-top: -4.2rem;
-  }
-  40% {
-    margin-top: -8.2rem;
-  }
-  60% {
-    margin-top: -8.2rem;
-  }
-  70% {
-    margin-top: -4.2rem;
-  }
-  80% {
-    margin-top: -4.2rem;
-  }
-  90% {
-    margin-top: 0;
-  }
-  100% {
-    margin-top: 0;
-  }
-}
+
 
 /* DESKTOP ----------------------------- */
 
 @media only screen and (min-width: 600px) {
+
+  @keyframes text-animation {
+    0% {
+      margin-top: -0.2rem;
+    }
+    10% {
+      margin-top: -0.2rem;
+    }
+    20% {
+      margin-top: -4.2rem;
+    }
+    30% {
+      margin-top: -4.2rem;
+    }
+    40% {
+      margin-top: -8.7rem;
+    }
+    60% {
+      margin-top: -8.7rem;
+    }
+    70% {
+      margin-top: -4.2rem;
+    }
+    80% {
+      margin-top: -4.2rem;
+    }
+    90% {
+      margin-top: -0.2rem;
+    }
+    100% {
+      margin-top: -0.2rem;
+    }
+  }
 
 /* CURSOR------------------------------ https://codepen.io/OuterVale/embed/MYWQQoR?default-tab=result&theme-id=1 */
 
@@ -383,7 +386,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem 0;
   }
 
@@ -396,8 +399,12 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
   }
 
-  #detalle-titulo{
-
+  #detalle-info li{
+    font-weight: 600;
+    font-size: 20px;
+    gap: 1rem;
+    padding: 1rem 0;
+    list-style: none;
   }
 
   #detalle-info{
@@ -407,6 +414,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     text-align: justify;
     gap: 1rem;
     font-size: 25px;
+    border-left: var(--white) solid 1px;
+    padding-left: 2rem;
   }
 
   #section2 {
@@ -696,6 +705,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   /* PERFIL */
+
+  #sectionperfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
 
   #ctn-subtitulo{
     width: 50%;
@@ -1032,6 +1048,41 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 /* MOBILE------------------------------------------------------------------------------------------------------------------------ */
 
 @media only screen and (max-width: 600px) {
+
+  @keyframes text-animation {
+    0% {
+      margin-top: 0;
+    }
+    10% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: -4.3rem;
+    }
+    30% {
+      margin-top: -4.3rem;
+    }
+    40% {
+      margin-top: -8.2rem;
+    }
+    60% {
+      margin-top: -8.2rem;
+    }
+    70% {
+      margin-top: -4.3rem;
+    }
+    80% {
+      margin-top: -4.3rem;
+    }
+    90% {
+      margin-top: 0;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+
   *{
     color: var(--black);
     font-family: "Monospac821 BT", monospace;
@@ -1445,12 +1496,29 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
 
   /* PERFIL */
 
+  .container-animation {
+    color: var(--white);
+    text-transform: uppercase;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
     /* PERFIL */
 
     #ctn-subtitulo{
-      width: 70%;
-      margin: 2rem;
+      width: 100%;
+      margin: 2rem 0;
       text-align: justify;
+      display: flex;
+      justify-content: center;
+    }
+
+    .subtitulo{
+      width: 70%;
     }
 
 
