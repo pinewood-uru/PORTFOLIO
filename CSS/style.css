@@ -9,7 +9,7 @@
 :root {
   --font-primaria: "Monospac821 BT", monospace;
   --black: #191919;
-  --white: #ffffff;
+  --white: #f4f3f3;
   --bgwhite: #f3f3f359;
   --bgblack: #191919e3;
   --grey: #e2e4e200;
@@ -28,7 +28,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black);
+  background-color: var(--white);
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ html {
   width: 22px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--black);
   animation: l10 1s infinite linear;
 }
 @keyframes l10 {
@@ -1042,6 +1042,10 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   footer {
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    bottom: 0px;
     height: 8vh;
     width: 100%;
     display: flex;
@@ -1049,6 +1053,8 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     padding: 0 3rem;
     border-top: var(--black) solid 1px;
+    background: var(--white);
+
   }
 
   /* ID -------------- */
@@ -1065,7 +1071,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #banner {
     position: relative;
     width: 100%;
-    min-height: 40vh;
+    min-height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1147,7 +1153,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 2rem 0;
     margin: 3rem 0;
     justify-content: center;
     align-items: center;
@@ -1182,10 +1188,15 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #contacto-info {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 1rem 0;
+  }
+
+  #contacto-info > h2 {
+    font-size: 20px;
   }
 
   #ctn-contacto-form {
@@ -1206,9 +1217,10 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #ctn-contacto-form p {
-    font-size: 14px;
+    font-size: 20px;
     padding: 0 0.5rem;
     width: 100%;
+    
   }
 
   #ctn-contacto-form label {
@@ -1289,7 +1301,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #menu-footer {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
   }
@@ -1312,6 +1324,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     border-top: var(--black) solid 1px;
     border-bottom: var(--black) solid 1px;
+    background: var(--grey);
 
   }
 
