@@ -624,7 +624,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #ctn-contacto-form textarea,
   #ctn-contacto-form button {
     width: 100%;
-    border: var(--black) solid 1px;
+    border: var(--white) solid 1px;
     border-radius: 0;
     margin: 0.5rem;
     padding: 0.25rem;
@@ -637,13 +637,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #ctn-contacto-form button {
-    color: var(--grey);
+    color: var(--white);
     background: var(--black);
     padding: 1rem;
   }
 
   #ctn-contacto-form button:hover {
-    color: var(--black);
+    color: var(--white);
     background: var(--bgblack);
     padding: 1rem;
   }
@@ -1535,13 +1535,13 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #ctn-contacto-form button {
-    color: var(--grey);
+    color: var(--white);
     background: var(--black);
     padding: 1rem;
   }
 
   #ctn-contacto-form button:hover {
-    color: var(--black);
+    color: var(--white);
     background: var(--bgblack);
     padding: 1rem;
   }
