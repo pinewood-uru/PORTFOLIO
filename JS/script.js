@@ -78,6 +78,3 @@ function showFooter() {
 
 window.addEventListener("scroll", showFooter);
 
-// REPRODUCIR VIDEO EN MOBILE
-const video = document.getElementById('myVideo');
-window.addEventListener('touchstart', () => video.play());
