@@ -1,4 +1,4 @@
-// COLLAPSE -------
+// COLLAPSE ------- Creador con ayuda de windsurf extension
 
 // Selecciono todos los botones con la clase "collapse"
 const buttons = document.querySelectorAll(".collapse");
@@ -62,7 +62,7 @@ loader.classList.add('show');
 document.body.style.overflowY = 'hidden';
 
 
-// FOOTER EN MOBILE ---------
+// FOOTER EN MOBILE --------- Creador con ayuda de windsurf extension
 
 const footer = document.querySelector("footer");
 
