@@ -342,7 +342,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-height: 65vh;
+    max-height: 70vh;
   }
 
   #banner {
@@ -351,7 +351,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     display: flex;
     flex-direction: column;
     min-height: 200px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
   }
@@ -404,6 +404,11 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     gap: 1rem;
     padding: 1rem 0;
     list-style: none;
+  }
+
+  #detalle-info li:hover{
+    font-size: 22px;
+    
   }
 
   #detalle-info{
@@ -1275,6 +1280,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     border-bottom: var(--white) solid;
     padding: 1rem 0;
   }
+
 
   #section2 {
     display: flex;
