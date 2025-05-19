@@ -1,9 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Monospac821 BT", monospace;
-  text-transform: uppercase;
+@font-face {
+  font-family: "Monospac821 BT";
+  src: url("monospac821-bt/MONOSPACE821BT.TTF") format("TTF");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -15,6 +14,14 @@
   --grey: #e2e4e200;
   --blue: #0026ff;
   --red: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monospac821 BT", monospace;
+  text-transform: uppercase;
 }
 
 html {
@@ -260,7 +267,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   h6,
   a {
     color: var(--black);
-    font-family: "Monospac821 BT";
+    font-family: "Monospac821 BT", monospace !important;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -307,13 +314,14 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   nav {
-    height: 7vh;
+    height: 10vh;
     width: 100%;
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: .5rem;
   }
 
   nav > div {
@@ -413,7 +421,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   #detalle-info li{
     font-size: 20px;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
     list-style: none;
   }
 
@@ -461,7 +469,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
   }
 
   #section3 h3{
-    color: var(--white);
+    color: var(--black);
   }
 
 
@@ -1273,6 +1281,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     align-items: center;
     gap: .25rem;
     padding: 1rem 0;
+    margin: 1rem 0;
   }
 
   #ctn-detalle-info>div:first-child{
@@ -1324,19 +1333,7 @@ https://codepen.io/carloscdev/pen/mdBLmwP*/
     border-top: var(--white) solid 1px;
     padding: 1rem;
   }
-
-  #section3 > div:nth-child(1) {
-    flex: 1 1 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #section3 > div:nth-child(3) {
-    flex-direction: row-reverse;
-  }
+  
 
   #section4 {
     display: flex;
